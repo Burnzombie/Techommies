@@ -1,0 +1,325 @@
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start of CSS */ 
+
+.page {
+  display: grid;
+  grid-template-rows: 65px calc(100vh - 65px);  /* height limitation on second row */
+  grid-template-columns: 31vh auto;
+  grid-template-areas: "header header" 
+                       "nav content";
+}
+
+.header {
+  grid-area: header;
+  background-color: rgba(11,11,11,0.86);
+}
+
+.content {
+  grid-area: content;
+	background-image: 	linear-gradient(#FFFFFF, #DCDCDC, #C8C8C8, #A9A9A9, #888888, #686868, #404040, 	#202020, #121212);
+    overflow: auto;                                /* overflow condition on parent */
+}
+
+#contentgrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+}
+
+article {
+	grid-column: 1/2;
+	margin-left: 50px;
+	text-align: center;
+	width: 80%;
+	height: 90%;       
+    background-color: rgba(11,11,11,0.86);
+	margin-bottom: 50px;
+	border-radius: 25px;
+}
+
+.names {
+	font-size: 1.8em;
+	font-family: 'Exo', sans-serif;
+}
+
+#logo {
+	margin-left: 20px;
+}
+
+.header h1 {
+	float: right;
+	font-size: 40px;
+	padding: 10px;
+	margin-right: 40px;
+	color: white;
+	font-family: 'Exo', sans-serif;
+}
+
+footer {
+	margin: auto;
+	text-align: center;
+	width: 80%;
+	height: 55px;
+	background-color: aquamarine;
+}
+
+#footer {
+	padding-top: 30px
+}
+
+/* Side Nav */
+
+.sidenav {
+  grid-area: nav;
+ background-color: rgba(11,11,11,0.86);
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a  {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+	font-family: 'Exo', sans-serif;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Exo', sans-serif;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+	background-color: #484848;
+}
+
+.fas fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color:darkgray;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: gray;
+  color: darkslategray;
+}
+
+/* Video Id's */ 
+
+article h1 {
+	font-size: 3em;
+	padding: 10px;
+	color: white;
+	font-family: 'Exo', sans-serif;
+}
+
+#video1 {
+	padding-top: 50px;
+}
+
+#video2 {
+	padding-top: 50px;
+}
+
+#video3 {
+	padding-top: 50px;
+}
+
+#video4 {
+	padding-top: 50px;
+}
+
+#video5 {
+	padding-top: 50px;
+}
+
+#video6 {
+	padding-top: 50px;
+}
+
+#video7 {
+	padding-top: 50px;
+}
+
+#video8 {
+	padding-top: 50px;
+}
+
+#video9 {
+	padding-top: 50px;
+}
+
+#video10 {
+	padding-top: 50px;
+}
+
+#video11 {
+	padding-top: 50px;
+}
+
+#video12 {
+	padding-top: 50px;
+}
+
+#video13 {
+	padding-top: 50px;
+}
+
+#video14 {
+	padding-top: 50px;
+}
+
+#video15 {
+	padding-top: 50px;
+}
+
+.about {
+	padding-top: 50px;
+}
+
+#aboutgrid {
+	display: grid;
+	grid-template-columns: 1fr; 
+}
+
+section {
+	grid-column: 1/3;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+	width: 90%;
+	height: 90%;       
+    background-color: rgba(11,11,11,0.86);
+	margin-bottom: 50px;
+	border-radius: 25px;
+}
+
+section h1 {
+	font-size: 3em;
+	padding: 10px;
+	color: white;
+	font-family: 'Exo', sans-serif;
+}
+
+/*@media screen and (max-width:1600px) {
+	
+	#contentgrid {
+	display: grid;
+	grid-template-columns: 1fr; 
+}
+
+	article {
+	grid-column: 1/2;
+	margin-left: 50px;
+	text-align: center;
+	width: 80%;
+	height: 80%;       
+    background-color: rgba(11,11,11,0.86);
+	margin-bottom: 50px;
+		border-radius: 25px;
+}
+}
+
+@media screen and (max-width:1000px) {
+	.header h1 {
+		display: none;
+	}
+	
+	#contentgrid {
+	display: grid;
+	grid-template-columns: 1fr; 
+}
+
+	article {
+	grid-column: 1/2;
+	margin-left: 50px;
+	text-align: center;
+	width: 550px;
+	height: 420px;       
+    background-color: rgba(11,11,11,0.86);
+	margin-bottom: 50px;
+	border-radius: 25px;
+	min-width: 550px;
+}
+}*/
+
+	
+
+
+
+
